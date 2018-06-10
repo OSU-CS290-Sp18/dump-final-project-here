@@ -3,6 +3,10 @@ header {
   margin: auto;
   padding: 15px;
   text-align: center;
+  width: 100%
+}
+body {
+  margin: 0;
 }
 
 html {
@@ -13,10 +17,15 @@ html {
 
 .container {
   background-color: #BCD979;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 15px;
+  
 }
 
 .navigation {
   text-align:center;  
+  justify-content: center;
 }
 
 .navigation-item {
@@ -24,5 +33,5 @@ html {
   padding: 10px;
   display: inline;
   border-radius: 15px;
+  margin: 10px;
 }
-
