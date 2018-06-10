@@ -7,14 +7,46 @@ header {
 
 html {
   margin: 0;
-  background-color: #5E574D;
+  background-color: #c0c5d3;
   background-position: center;
 }
 
+.photos-container {
+  text-align: center;
+  margin: 50px 10%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.park-name {
+	background-color: #6B7A7B;
+	background-position: center;
+	margin-bottom: 5px;
+	color: white;
+}
+
+.single-park {
+	padding: 5px;
+	margin: 20px;
+	width: 300px;
+}
+
+.park-content {
+	display: flex;	
+	margin: 0;
+	padding: 0;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.photo-slot {
+	margin: 0;
+	padding: 0;	
+}
 
 .navigation {
   text-align:center;
-  
-  
 }
 
