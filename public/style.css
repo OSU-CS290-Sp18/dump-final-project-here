@@ -11,10 +11,19 @@ html {
   background-position: center;
 }
 
+.container {
+  background-color: #BCD979;
+}
 
 .navigation {
-  text-align:center;
-  
-  
+  text-align:center;  
+  justify-content: center;
+}
+
+.navigation-item {
+  background-color: #9DAD6F;
+  padding: 10px;
+  display: inline;
+  border-radius: 15px;
 }
 
