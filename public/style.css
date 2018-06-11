@@ -23,6 +23,7 @@ HEAD
   flex-wrap: wrap;
   justify-content: center;
   flex-direction: row;
+  position: absolute;
 }
 
 .park-name {
@@ -36,6 +37,7 @@ HEAD
 	padding: 5px;
 	margin: 20px;
 	width: 300px;
+  justify-content: center;
 }
 
 .park-content {
@@ -61,14 +63,23 @@ HEAD
 }
 
 .navigation {
-  text-align:center;  
+  position: relative;
+  text-align: center;  
   justify-content: center;
+  margin: 0;
+  padding: 25px;
+  top: -10px;  
 }
 
 .navigation-item {
   background-color: #9DAD6F;
-  padding: 10px;
-  display: inline;
+  padding: 15px;
   border-radius: 15px;
   margin: 10px;
+  text-decoration: none;
+  
+}
+
+ul {
+  display:inline;
 }
