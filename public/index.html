@@ -4,9 +4,11 @@
    <head>
 
       <link rel="stylesheet" href="style.css" media="screen">
+      <script src="index.js" charset="utf-8"</script> 
 
-      <!-- included library for JS inclusion of html headers -->
-      <script data-require="jquery@1.11.3" data-semver="1.11.3" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+     
+     <!-- included library for JS inclusion of html headers -->
+      <script data-require="jquery@1.11.3" data-semver="1.11.3" src="http://code.jquery.com/jquery-1.11.3.min.js" defer></script>
 
       <!-- Future scripts will be linked here -->
 
@@ -37,14 +39,24 @@
       </article>
 	</main>
 	<!-- Unique Page Conent Will Go Here-->	
-	<h1>Hello World!</h1>
+
+  <!-- Client Js for demo purpose only. Will be used with templated pages later in development -->
+  <article>
+     <div id="rank-counter"></div>    
+     <button type="button" id="rank-1">1 Star</button>
+     <button type="button" id="rank-2">2 Star</button>
+     <button type="button" id="rank-3">3 Star</button>
+     <button type="button" id="rank-4">4 Star</button>
+     <button type="button" id="rank-5">5 Star</button>
+
+  </article>
 
 	<footer></footer>
 
 	<!-- code for including header/footer -->
 	<script type= "text/javascript">
 
-		$(window).ready(function() {
+		$(document).ready(function() {
 		   
 		   // Add header into <header>
 		   $.get("header.html", function(fileData) {
