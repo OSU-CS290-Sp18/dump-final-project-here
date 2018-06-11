@@ -1,0 +1,21 @@
+<main class="photos-container">
+
+{{#each parks}}
+	<div class="park-card">
+      <a href="/parks/{{@key}}">{{name}}</a>
+    </div>
+{{/each}}
+
+</main>
+	<!-- Unique Page Conent Will Go Here-->	
+
+  <!-- Client Js for demo purpose only. Will be used with templated pages later in development -->
+  <article>
+     <div id="rank-counter"></div>    
+     <button type="button" id="rank-1">1 Star</button>
+     <button type="button" id="rank-2">2 Star</button>
+     <button type="button" id="rank-3">3 Star</button>
+     <button type="button" id="rank-4">4 Star</button>
+     <button type="button" id="rank-5">5 Star</button>
+
+</article>

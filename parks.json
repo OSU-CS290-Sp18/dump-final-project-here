@@ -1,0 +1,44 @@
+{
+  "badlands": {
+    "name": "Badlands National Park",
+    "thumbnails": [
+      {
+        "alt-text": "Badlands 1.",
+        "thumbnail": "https://farm3.staticflickr.com/2925/14765885545_fc90cb99e4_q_d.jpg"
+      },
+      {
+        "alt-text": "Badlands 2.",
+        "thumbnail": "https://farm7.staticflickr.com/6017/6018573750_8606fb2262_q_d.jpg"
+      },      
+	  {
+        "alt-text": "Badlands 3.",
+        "thumbnail": "https://farm5.staticflickr.com/4475/37643548602_ef8c39ac10_q_d.jpg"
+      },      
+	  {
+        "alt-text": "Badlands 4.",
+        "thumbnail": "https://farm6.staticflickr.com/5521/9346415136_63d47bbdce_q_d.jpg"
+      }
+    ]
+  },
+  "different place": {
+    "name": "Not Badlands National Park",
+    "thumbnails": [
+      {
+        "alt-text": "Badlands 1.",
+        "thumbnail": "https://farm3.staticflickr.com/2925/14765885545_fc90cb99e4_q_d.jpg"
+      },
+      {
+        "alt-text": "Badlands 2.",
+        "thumbnail": "https://farm7.staticflickr.com/6017/6018573750_8606fb2262_q_d.jpg"
+      },      
+	  {
+        "alt-text": "Badlands 3.",
+        "thumbnail": "https://farm5.staticflickr.com/4475/37643548602_ef8c39ac10_q_d.jpg"
+      },      
+	  {
+        "alt-text": "Badlands 4.",
+        "thumbnail": "https://farm6.staticflickr.com/5521/9346415136_63d47bbdce_q_d.jpg"
+      }
+    ]
+  }
+}

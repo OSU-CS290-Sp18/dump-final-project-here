@@ -2,13 +2,10 @@
           <div class="park-name"> {{name}} </div>
 		  <div class="park-content">
 		  
-		    <img class="photo_slot" src = {{thumb1}} alt= ({{name}} + "thumbnail 1") ></img>
-			
-			<img class="photo_slot" src = {{thumb1}} alt= ({{name}} + "thumbnail 2") ></img>
-			
-			<img class="photo_slot" src = {{thumb1}} alt= ({{name}} + "thumbnail 3") ></img>
-			
-			<img class="photo_slot" src = {{thumb1}} alt= ({{name}} + "thumbnail 4") ></img>
+			{{#each thumbnails}}
+				<img class="photo_slot" src = {{thumbnail}} alt= ({{alt-text}}) ></img>
+			{{/each}}
+				
 			
         </div>
       </article>

@@ -15,9 +15,6 @@
   },
   "author": "Grayland Lunn",
   "license": "UNLICENSED",
-  "bugs": {
-    "url": "https://github.com/OSU-CS290-Sp18/master-assignment-5/issues"
-  },
   "homepage": "https://github.com/OSU-CS290-Sp18/dump-final-project-here",
   "dependencies": {
     "express": "^4.16.3",
