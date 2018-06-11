@@ -2,8 +2,6 @@
 var counter = 0;
 var rating = 0;
 
-
-
 /* Will recieve all rating based information */
 /* Prevents the page from loading like shit */
 window.onload = function() {
