@@ -31,6 +31,10 @@ app.set('view engine', 'handlebars');
 app.use(bodyParser.json());
 app.use(express.static('public'));
 
+app.get('*', function(req, res, next) {
+	res.status(404).send('404 Page Not Found');
+})
+
 app.get('/', function(req, res, next) {
 	res.status(200).render('index.html')
 })
