@@ -23,14 +23,14 @@ templates['park_card'] = template({"1":function(container,depth0,helpers,partial
     + ((stack1 = ((helper = (helper = helpers.park_name || (depth0 != null ? depth0.park_name : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"park_name","hash":{},"data":data}) : helper))) != null ? stack1 : "")
     + " N.P. \r\n			<div class=\"rating-buttons\">\r\n				<button type=\"button\" class="
     + ((stack1 = ((helper = (helper = helpers.park_name || (depth0 != null ? depth0.park_name : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"park_name","hash":{},"data":data}) : helper))) != null ? stack1 : "")
-    + " id=\"rank-1\">1 Star</button>\r\n				<button type=\"button\" class="
+    + " id=\"1\">1 Stars</button>\r\n				<button type=\"button\" class="
     + ((stack1 = ((helper = (helper = helpers.park_name || (depth0 != null ? depth0.park_name : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"park_name","hash":{},"data":data}) : helper))) != null ? stack1 : "")
-    + " id=\"rank-2\">2 Star</button>\r\n				<button type=\"button\" class="
+    + " id=\"2\">2 Stars</button>\r\n				<button type=\"button\" class="
     + ((stack1 = ((helper = (helper = helpers.park_name || (depth0 != null ? depth0.park_name : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"park_name","hash":{},"data":data}) : helper))) != null ? stack1 : "")
-    + " id=\"rank-3\">3 Star</button>\r\n				<button type=\"button\" class="
+    + " id=\"3\">3 Stars</button>\r\n				<button type=\"button\" class="
     + ((stack1 = ((helper = (helper = helpers.park_name || (depth0 != null ? depth0.park_name : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"park_name","hash":{},"data":data}) : helper))) != null ? stack1 : "")
-    + " id=\"rank-4\">4 Star</button>\r\n				<button type=\"button\" class="
+    + " id=\"4\">4 Stars</button>\r\n				<button type=\"button\" class="
     + ((stack1 = ((helper = (helper = helpers.park_name || (depth0 != null ? depth0.park_name : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"park_name","hash":{},"data":data}) : helper))) != null ? stack1 : "")
-    + " id=\"rank-5\">5 Star</button>\r\n			</div>\r\n			</div>\r\n        </div>\r\n      </article>";
+    + " id=\"5\">5 Stars</button>\r\n			</div>\r\n			</div>\r\n        </div>\r\n      </article>";
 },"useData":true});
 })();

@@ -7,6 +7,17 @@ var rating = 0;
 /* Prevents the page from loading like shit */
 window.onload = function() {
 
+var allButtons = document.querySelectorAll("button"); //find all buttons, add event listener
+
+allButtons.forEach(function(item, index){
+	    item.addEventListener('click', function(event){
+			var targetPark = event.target.classList[0];
+			var numberToAdd = event.target.id;
+			console.log("targetPark == ", targetPark);
+			console.log("numberToAdd == ", numberToAdd);	
+  })
+});
+ 
   /* Catches exceotion for no database information. Will prevent listing of NaN or NULL*/
   if(rating === 0) {
     document.getElementById("rank-counter").innerHTML = "No Reviews";
