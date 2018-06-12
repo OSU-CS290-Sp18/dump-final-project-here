@@ -1,11 +1,28 @@
 header {
   background-color: #6B7A7B;
   margin: auto;
-  padding: 15px;
+  padding: 5px;
   text-align: center;
-  width: 100%
+  justify-content: center;
+  width: 100%;
 }
+
+.head-title{
+	color: black;
+	font-size: 25px;
+	position: relative;
+	width: 75%;
+	margin-left: 12.5%;
+	margin-right: 12.5%;
+	border-bottom: 2px solid white;
+}
+
+nav{
+	margin: 0;
+}
+
 body {
+  font-family: 'Raleway', sans-serif;
   margin: 0;
 }
 
@@ -20,7 +37,7 @@ html {
   margin: 50px 10%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: left;
   flex-direction: row;
   position: absolute;
 }
@@ -36,7 +53,7 @@ html {
 	padding: 5px;
 	margin: 20px;
 	width: 300px;
-  justify-content: center;
+	justify-content: center;
 }
 
 .park-content {
@@ -44,7 +61,7 @@ html {
 	margin: 0;
 	padding: 0;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: right;
 }
 
 .photo-slot {
@@ -52,33 +69,34 @@ html {
 	padding: 0;	
 }
 
-  
-.container {
-  background-color: #BCD979;
-  border-radius: 10px;
-  padding: 10px;
-  margin: 15px;
-  
+.photo-slot {
+	height: 150px;
+	width: 150px;
 }
 
-.navigation {
-  position: relative;
-  text-align: center;  
-  justify-content: center;
-  margin: 0;
-  padding: 25px;
-  top: -10px;  
+button{
+	background-color: #6B7A7B;
+	color: white;
+	border: 2px white;
+	/* border-color: white; */
+	/* border-style: solid; */
+	margin-top: 3px;
 }
 
-.navigation-item {
-  background-color: #9DAD6F;
-  padding: 15px;
-  border-radius: 15px;
-  margin: 10px;
-  text-decoration: none;
-  
+a{
+	padding-right: 10px;
+	padding-left: 10px;
+	text-decoration: none;
+	color: white;
 }
 
-ul {
-  display:inline;
+li {
+	text-decoration: none;
+	display: inline-block;
+	background-color: #6B7A7B;
+	margin-right: 5px;
+}
+
+ul{
+	display: inline-block;
 }

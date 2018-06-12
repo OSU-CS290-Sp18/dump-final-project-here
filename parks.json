@@ -1,6 +1,5 @@
-[
 {
-    "id": "badlands", 
+  "Badlands": {
     "name": "Badlands National Park",
     "thumbnails": [
       {
@@ -21,27 +20,25 @@
       }
     ]
   },
-
-{
-    "id": "another", 
-    "name": "Not Badlands National Park",
+  "Yosemite": {
+    "name": "Yosemite National Park",
     "thumbnails": [
       {
-        "alt-text": "Badlands 1.",
-        "thumbnail": "https://farm3.staticflickr.com/2925/14765885545_fc90cb99e4_q_d.jpg"
+        "alt-text": "Yosemite 1",
+        "thumbnail": "https://farm5.staticflickr.com/4195/34804773951_a7e45b991f_q_d.jpg"
       },
       {
-        "alt-text": "Badlands 2.",
-        "thumbnail": "https://farm7.staticflickr.com/6017/6018573750_8606fb2262_q_d.jpg"
+        "alt-text": "Yosemite 2.",
+        "thumbnail": "https://farm4.staticflickr.com/3810/9661765379_81b50b5e82_q_d.jpg"
       },      
 	  {
-        "alt-text": "Badlands 3.",
-        "thumbnail": "https://farm5.staticflickr.com/4475/37643548602_ef8c39ac10_q_d.jpg"
+        "alt-text": "Yosemite 3.",
+        "thumbnail": "https://farm3.staticflickr.com/2002/2339695399_36a9b2b7d7_q_d.jpg"
       },      
 	  {
-        "alt-text": "Badlands 4.",
-        "thumbnail": "https://farm6.staticflickr.com/5521/9346415136_63d47bbdce_q_d.jpg"
+        "alt-text": "Yosemite 4.",
+        "thumbnail": "https://farm9.staticflickr.com/8214/8408030343_944d8ae96c_q_d.jpg"
       }
     ]
   }
-]
+}

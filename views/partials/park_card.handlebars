@@ -1,11 +1,11 @@
       <article class="single-park">
-          <div class="park-name"> {{name}} </div>
+          <div class="park-name"> <a href="/parks/{{{park_name}}}">{{{park_name}}} N.P.</a> </div>
 		  <div class="park-content">
 		  
 			{{#each thumbnails}}
-				<img class="photo_slot" src = {{thumbnail}} alt= ({{alt-text}}) ></img>
+				<img class="photo_slot" src = {{this}}   alt= {{{park_name}}} {{{@index}}}. ></img>
 			{{/each}}
-				
+				<div class="review-entry"> <button type="button">Review {{{park_name}}} N.P.</button> </div>
 			
         </div>
       </article>
