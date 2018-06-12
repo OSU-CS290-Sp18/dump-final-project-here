@@ -13,10 +13,25 @@ var parksData = require('./parks');
 var app = express();
 var port = process.env.PORT || 3040;
 
+
+
+// var MongoClient = require('mongodb').MongoClient;
+
+// var mongoHost = process.env.MONGO_HOST || "classmongo.engr.oregonstate.edu";
+// var mongoPort = process.env.MONGO_PORT || 27017;
+// var mongoUsername = process.env.MONGO_USERNAME || "cs290_lunng";
+// var mongoPassword = process.env.MONGO_PASSWORD || "cs290_lunng";
+// var mongoDBName = process.env.MONGO_DB_NAME || "cs290_lunng";
+
+// var mongoURL = "mongodb://" + mongoUsername + ":" + mongoPassword + "@" + mongoHost + ":" + mongoPort + "/" + mongoDBName;
+
+// var mongoDB = null; 
+
 app.engine('handlebars',exphbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
 
 app.use(express.static(__dirname + '/public'));
+
 
 app.get('/', function(req, res, next){
 	res.status(200).render('parks_page', {
@@ -26,9 +41,6 @@ app.get('/', function(req, res, next){
 
 app.get('/parks/:park', function (req, res, next) {
   var park_input = req.params.park.toLowerCase();
-  console.log("park_input == ", park_input);
-  console.log("parksData.park_input ==", parksData.park_input);
-  console.log("parksData ==", parksData);
   if(parksData[park_input]){
     res.status(200).render('parks_page', {
 	parks: [parksData[park_input]] });
@@ -45,3 +57,11 @@ app.get('*', function (req, res, next) {
 app.listen(port, function () {
   console.log("== Server is listening on port rendering the proper server", port);
 });
+
+// MongoClient.connect(mongoURL, function (err, client) {
+	// if(err) {
+		// throw err;
+	// }
+	
+	// mongoDB = client.db(mongoDBName);
+// });

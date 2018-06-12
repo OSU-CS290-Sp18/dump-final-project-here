@@ -61,6 +61,7 @@ html {
   
 }
 
+
 .navigation {
   position: relative;
   text-align: center;  
@@ -70,15 +71,11 @@ html {
   top: -10px;  
 }
 
-.navigation-item {
-  background-color: #9DAD6F;
-  padding: 15px;
-  border-radius: 15px;
-  margin: 10px;
-  text-decoration: none;
-  
-}
 
 ul {
   display:inline;
+}
+
+body {
+  margin: 0;
 }
