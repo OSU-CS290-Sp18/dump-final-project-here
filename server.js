@@ -39,7 +39,6 @@ app.get('/', function(req, res, next){
 	if (err) {
 		res.status(500).send("Error fetching park from DB.");
 	} else {
-		console.log(parkDocs);
 		res.status(200).render('parks_page', {
 
 			parks: parkDocs
@@ -59,7 +58,6 @@ app.get('/parks/:park', function (req, res, next) {
   } else if (!parkDoc) {
     next();
   } else {
-	console.log(parkDoc);
     res.status(200).render('parks_page', {
 			parks: [parkDoc]
 		});
@@ -73,7 +71,6 @@ app.get('*', function (req, res, next) {
 });
 
 MongoClient.connect(mongoURL, function (err, client) {
-	console.log("mongoURL== ", mongoURL);
 	if(err) {
 		throw err;
 	}

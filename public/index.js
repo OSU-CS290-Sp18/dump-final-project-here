@@ -1,4 +1,5 @@
 /* Get from mongoDB */
+/* modal functionality copied from CS290 assignment 5*/
 var counter = 0;
 var rating = 0;
 
@@ -19,8 +20,9 @@ window.onload = function() {
     updateCounter();
   });
 
-  var rankTwo = document.getElementById("rank-2").addEventListener("click", function() {
-    /* Will have to be sent back to Mongo */
+  var rankTwo = document.getElementById("rank-2").addEventListener("click", function(event) {
+    var targetPark = event.target.classList[0];
+	console.log("targetPark == ", targetPark);
     counter++;
     rating += 2;
     updateCounter();
@@ -48,6 +50,48 @@ window.onload = function() {
     updateCounter();
 
   });
+}
+
+function hideCreateReviewModal() {
+
+  var modalBackdrop = document.getElementById('modal-backdrop');
+  var createTwitModal = document.getElementById('create-twit-modal');
+
+  // Hide the modal and its backdrop.
+  modalBackdrop.classList.add('hidden');
+  createTwitModal.classList.add('hidden');
+
+  clearTwitInputValues();
+
+}
+
+/*
+ * This function shows the modal to create a twit when the "create twit"
+ * button is clicked.
+ */
+function showCreateTwitModal() {
+
+  var modalBackdrop = document.getElementById('modal-backdrop');
+  var createTwitModal = document.getElementById('create-twit-modal');
+
+  // Show the modal and its backdrop.
+  modalBackdrop.classList.remove('hidden');
+  createTwitModal.classList.remove('hidden');
+
+}
+
+
+/*
+ * This function clears any value present in any of the twit input elements.
+ */
+function clearReviewInputValues() {
+
+  var twitInputElems = document.getElementsByClassName('twit-input-element');
+  for (var i = 0; i < twitInputElems.length; i++) {
+    var input = twitInputElems[i].querySelector('input, textarea');
+    input.value = '';
+  }
+
 }
 
 function updateCounter() {

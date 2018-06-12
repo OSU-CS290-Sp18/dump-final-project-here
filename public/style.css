@@ -56,12 +56,16 @@ html {
 	justify-content: center;
 }
 
+.review-entry {
+	display: block;
+}
+
 .park-content {
-	display: flex;	
+	display: flex;
+	flex-wrap: wrap;	
 	margin: 0;
 	padding: 0;
-	flex-wrap: wrap;
-	justify-content: right;
+	justify-content: left;
 }
 
 .photo-slot {
@@ -75,9 +79,11 @@ html {
 }
 
 button{
+	display: inline-block;
 	background-color: #6B7A7B;
 	color: white;
 	border: 2px white;
+	margin-left: 5px;
 	/* border-color: white; */
 	/* border-style: solid; */
 	margin-top: 3px;

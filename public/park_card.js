@@ -19,8 +19,18 @@ templates['park_card'] = template({"1":function(container,depth0,helpers,partial
     + ((stack1 = ((helper = (helper = helpers.park_name || (depth0 != null ? depth0.park_name : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"park_name","hash":{},"data":data}) : helper))) != null ? stack1 : "")
     + " N.P.</a> </div>\r\n		  <div class=\"park-content\">\r\n		  \r\n"
     + ((stack1 = helpers.each.call(alias1,(depth0 != null ? depth0.thumbnails : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "				<div class=\"review-entry\"> <button type=\"button\">Review "
+    + "			\r\n			<div class=\"review-entry\"> Review "
     + ((stack1 = ((helper = (helper = helpers.park_name || (depth0 != null ? depth0.park_name : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"park_name","hash":{},"data":data}) : helper))) != null ? stack1 : "")
-    + " N.P.</button> </div>\r\n			\r\n        </div>\r\n      </article>";
+    + " N.P. \r\n			<div class=\"rating-buttons\">\r\n				<button type=\"button\" class="
+    + ((stack1 = ((helper = (helper = helpers.park_name || (depth0 != null ? depth0.park_name : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"park_name","hash":{},"data":data}) : helper))) != null ? stack1 : "")
+    + " id=\"rank-1\">1 Star</button>\r\n				<button type=\"button\" class="
+    + ((stack1 = ((helper = (helper = helpers.park_name || (depth0 != null ? depth0.park_name : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"park_name","hash":{},"data":data}) : helper))) != null ? stack1 : "")
+    + " id=\"rank-2\">2 Star</button>\r\n				<button type=\"button\" class="
+    + ((stack1 = ((helper = (helper = helpers.park_name || (depth0 != null ? depth0.park_name : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"park_name","hash":{},"data":data}) : helper))) != null ? stack1 : "")
+    + " id=\"rank-3\">3 Star</button>\r\n				<button type=\"button\" class="
+    + ((stack1 = ((helper = (helper = helpers.park_name || (depth0 != null ? depth0.park_name : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"park_name","hash":{},"data":data}) : helper))) != null ? stack1 : "")
+    + " id=\"rank-4\">4 Star</button>\r\n				<button type=\"button\" class="
+    + ((stack1 = ((helper = (helper = helpers.park_name || (depth0 != null ? depth0.park_name : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"park_name","hash":{},"data":data}) : helper))) != null ? stack1 : "")
+    + " id=\"rank-5\">5 Star</button>\r\n			</div>\r\n			</div>\r\n        </div>\r\n      </article>";
 },"useData":true});
 })();
