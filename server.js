@@ -18,8 +18,8 @@ app.set('view engine', 'handlebars');
 
 app.use(express.static('public'));
 
-app.get('/', function(req, res, next){
-	res.status(200).render('/views/parks_page', {
+app.get('/here', function(req, res, next){
+	res.status(200).render('parks_page', {
 		parks: parksData
 	});
 });
@@ -34,5 +34,5 @@ app.get('/parks/:park', function (req, res, next) {
 });
 
 app.listen(port, function () {
-  console.log("== Server is listening on port", port);
+  console.log("== Server is listening on port rendering the proper server", port);
 });

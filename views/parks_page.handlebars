@@ -1,9 +1,7 @@
 <main class="photos-container">
 
 {{#each parks}}
-	<div class="park-card">
-      <a href="/parks/{{@key}}">{{name}}</a>
-    </div>
+	{{> park_card}}
 {{/each}}
 
 </main>
