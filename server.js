@@ -31,13 +31,13 @@ app.set('view engine', 'handlebars');
 app.use(bodyParser.json());
 app.use(express.static('public'));
 
-app.get('*', function(req, res, next) {
-	res.status(404).send('404 Page Not Found');
-})
+
 
 app.get('/', function(req, res, next) {
-	res.status(200).render('index.html')
-})
+	res.status(200).render('parks_page', {
+		parks: parksData
+	});
+});
 
 app.get('/here', function(req, res, next){
 	res.status(200).render('parks_page', {
@@ -45,6 +45,9 @@ app.get('/here', function(req, res, next){
 	});
 });
 
+app.get('*', function(req, res, next) {
+	res.status(404).send('404 Page Not Found');
+});
 
 app.get('/parks/:park', function (req, res, next) {
   var park = require.params.park.toLowerCase(); 
