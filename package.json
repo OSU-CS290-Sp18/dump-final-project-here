@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "build": "handlebars ./views/partials/park_card.handlebars -f public/park_card.js",
-    "prestart": "npm run build"	
+    "prestart": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -17,12 +17,12 @@
   "license": "UNLICENSED",
   "homepage": "https://github.com/OSU-CS290-Sp18/dump-final-project-here",
   "dependencies": {
+    "body-parser": "^3.10.10",
     "express": "^4.16.3",
     "express-handlebars": "^3.0.0",
     "handlebars": "^4.0.11",
     "mongo": "^0.1.0",
-    "mongodb": "^3.0.10",
-    "body-parser": "^3.10.10"
+    "mongodb": "^3.0.10"
   },
   "devDependencies": {}
 }
